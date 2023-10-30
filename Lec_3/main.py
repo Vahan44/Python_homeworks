@@ -3,7 +3,7 @@ import re
 def calculate(expression):
     expression = re.sub(r'\s', '', expression)
 
-    precedence = {'+': 1, '-': 1, '*': 2, '/': 2, '^': 3}
+    precedence = {'+': 1, '-': 1, '/': 2, '*': 2, '^': 3}
 
     def apply_operator(operators, values):
         operator = operators.pop()
